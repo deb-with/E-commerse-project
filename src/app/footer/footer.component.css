@@ -1,0 +1,28 @@
+/* start footer for page css .............. */
+.page-footer{
+    background-color:#000;
+    color: #fff;
+}
+.about-list a{
+    color:#fff;
+}
+.input-email{
+    border-radius: 6px;
+}
+.subscribe-button{
+    border-radius: 8px;
+    color: rgb(236, 232, 232);
+    font-weight: bold;
+    margin-left:5px;
+    background-color:red;
+    margin-top: 10px;
+}
+.subscribe-button a{
+    font-size:15px;
+}
+.subscribe-button:hover{
+    background-color: blue;
+}
+.follow-us-icon{
+    padding:px;
+}

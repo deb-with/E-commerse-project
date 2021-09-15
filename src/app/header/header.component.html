@@ -1,0 +1,77 @@
+<header>
+    <section class="header-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="top-left">
+                        <button type="button" class="btn btn-danger"><a routerLink="/android-app"><i class="fa fa-mobile"></i>Android
+                                App</a></button>
+                    </div>
+                </div>
+                <!-- <div class="col-mb-6"></div> -->
+                <div class="col-md-8 top-right mt-3 mt-sm-0">
+                    <button type="button" class="button-shift btn btn-danger " >
+                        <a routerLink="/login"class="login-button">Login</a>
+                        <a routerLink="/register"class="register-button">/Register</a></button>
+                    <div class="social-icon">
+                        <a routerLink="#"><i class="fa fa-facebook"></i></a>
+                        <a routerLink="#"><i class="fa fa-twitter"></i></a>
+                        <a routerLink="#"><i class="fa fa-whatsapp"></i></a>
+                        <a routerLink="#"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar navbar-expand-lg header-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" routerLink="/index" >
+                <h1>my-shop</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i><!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- .....................for search ber ..................................... -->
+                <form class="d-flex searchFrom">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <!-- for home page....................................................... -->
+                <!-- <div class="col-2 nav-right"></div> -->
+                <ul class="navbar-nav me-auto mr-50 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" routerLink="/index" routerLinkActive="active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> Category </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" routerLink="/vegetables"routerLinkActive="active">Vegetables<i
+                                        class="fa fa-angle-right"></i></a>
+                            </li>
+                            <li><a class="dropdown-item" routerLink="/grocery"routerLinkActive="active">Grocery<i
+                                        class="fa fa-angle-right"></i></a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" routerLink="/fruits"routerLinkActive="active">Fruits<i
+                                        class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" routerLink="/about-us"routerLinkActive="active">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" routerLink="/contact"routerLinkActive="active">Contact</a>
+                    </li>
+                </ul>
+                <div class="rightside">
+                    <a routerLink="#"><i class="fa fa-shopping-cart"></i></a>
+                    <a routerLink="#"><i class="fa fa-heart-o"></i></a>
+                    <a routerLink="/login"><i class="fa fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,104 @@
+/* ...................contact page css properties............. */
+.body-contact{
+    min-height :100%;
+    /* background:url(https://ak7.picdn.net/shutterstock/videos/7369597/thumb/1.jpg) no-repeat; */
+    /* background-size:cover; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+.contact-section{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:50px;
+}
+.contact-info{
+    color:rgb(5, 5, 5);
+    max-width:500px;
+    line-height:65px;
+    padding-left:30px;
+    font-size:20px;
+    margin-right:50px;
+    
+}
+.contact-info i {
+    margin-right:20px;
+    font-size:20px;
+}
+.contact-form{
+    max-width:700px;
+    margin-right:50px;
+}
+.contact-info,.contact-form{
+    flex:1;
+}
+.contact-form h2{
+    color:#fff;
+    text-align:left;
+    font-size:30px;
+    text-transform: uppercase;
+    margin-bottom:100px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+   
+}
+.contact-form .text-box{
+    background: rgb(222, 220, 226);
+    color:#000;
+    border:none;
+    width:65%;
+    height:50px;
+    padding:12px;
+    font-size:15px;
+    border-radius:5px;
+    box-shadow:0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+    opacity:0.9;
+}
+.contact-form .text-box:first-child{
+    margin-right:10px;
+}
+.contact-form textarea{
+    background:rgb(207, 203, 216);
+    color:#000;
+    border:none;
+    width:100%;
+    padding:12px;
+    font-size:15px;
+    min-height:200px;
+    max-height:400px;
+    resize:vertical;
+    border-radius:5px;
+    box-shadow:20px;
+    opacity:0.9;
+}
+.contact-form .send-btn{
+    background-color:red;
+    color:#fff;
+    margin-top: 8px;
+    border-radius: 5px;
+   width:15%;
+}
+.contact-form .send-btn:hover{
+    color:blue;
+}
+@media only screen and (max-width:768px){
+    .contact-section{
+        flex-direction:column;
+    }
+    .contact-info .contact-form{
+        margin:30px 50px;
+    }
+
+    .contact-form h2{
+        font-size:30px;
+
+    }
+    .contact-form .text-box{
+        width:100%;
+    }
+}
+

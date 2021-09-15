@@ -1,0 +1,31 @@
+
+/* .............................login page...................... */
+.form-container{
+    display:block;
+    /* position: absolute; */
+    width:100%;
+    top:200px;
+    background: #fff;
+    padding:25px;
+    border-radius: 10px;
+    box-shadow:0px 0px 5px 0px #000;
+   
+}
+.contain-center{
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.form-container h1{
+   text-align: center;
+   color: red;
+   margin-bottom: 50px;
+}
+
+.forget_password{
+    cursor: pointer;
+}
+
+/* .size-login .col-md-3 {
+    flex: 0 0 auto;
+    width: 40%;
+} */
