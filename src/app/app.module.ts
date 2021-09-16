@@ -17,6 +17,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { AndroidAppComponent } from './android-app/android-app.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,12 +35,14 @@ import { AndroidAppComponent } from './android-app/android-app.component';
     RegisterComponent,
     ForgetPasswordComponent,
     AndroidAppComponent,
+    ProductDetailsComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

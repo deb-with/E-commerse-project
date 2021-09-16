@@ -11,6 +11,7 @@ import { GroceryComponent } from './grocery/grocery.component';
 import { FruitsComponent } from './fruits/fruits.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { AndroidAppComponent } from './android-app/android-app.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
   { path:'', pathMatch:'full',redirectTo:'/index'},
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path:'forget-password',component:ForgetPasswordComponent},
   { path:'register',component:RegisterComponent},
   { path:'android-app',component:AndroidAppComponent},
+  { path:'product-details',component:ProductDetailsComponent},
   { path:'**', component:PageNotFoundComponent}
 ];
 
