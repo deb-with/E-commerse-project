@@ -67,17 +67,20 @@
                                     <div class="accordion-body">
                                         <ul class="sub-accordian">
                                             <li class="category-item">
-                                                <a routerLink="/product-details">Onion</a>
+                                                <a routerLink="/Categories/vegetables/onion"
+                                                    routerLinkActive="active">Onion</a>
                                             </li>
                                         </ul>
                                         <ul class="sub-accordian">
                                             <li class="category-item">
-                                                <a routerLink="/product-details">Potato</a>
+                                                <a routerLink="/Categories/vegetables/potato"
+                                                    routerLinkActive="active">Potato</a>
                                             </li>
                                         </ul>
                                         <ul class="sub-accordian">
                                             <li class="category-item">
-                                                <a routerLink="/product-details">Chili</a>
+                                                <a routerLink="/Categories/vegetables/chili"
+                                                    routerLinkActive="active">Chili</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -94,17 +97,17 @@
                                     <div class="accordion-body">
                                         <ul class="sub-accordian">
                                             <li class="category-item">
-                                                <a href="#">Rice</a>
+                                                <a routerLink="/Categories/grocery/rice">Rice</a>
                                             </li>
                                         </ul>
                                         <ul class="sub-accordian">
                                             <li class="category-item">
-                                                <a href="#">Suger</a>
+                                                <a routerLink="/Categories/grocery/sugar">Suger</a>
                                             </li>
                                         </ul>
                                         <ul class="sub-accordian">
                                             <li class="category-item">
-                                                <a href="#">Mustard Oil</a>
+                                                <a routerLink="/Categories/grocery/oil">Mustard Oil</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -121,17 +124,17 @@
                                     <div class="accordion-body">
                                         <ul class="sub-accordian">
                                             <li class="category-item">
-                                                <a href="#">Apple</a>
+                                                <a routerLink="/Categories/fruits/apple">Apple</a>
                                             </li>
                                         </ul>
                                         <ul class="sub-accordian">
                                             <li class="category-item">
-                                                <a href="#">Bananas</a>
+                                                <a routerLink="/Categories/fruits/bananas">Bananas</a>
                                             </li>
                                         </ul>
                                         <ul class="sub-accordian">
                                             <li class="category-item">
-                                                <a href="#">Mango</a>
+                                                <a routerLink="/Categories/fruits/mango">Mango</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -208,9 +211,9 @@
                     <!-- hr -->
                     <hr class="line">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3" *ngFor="let data of homePagedata.topOffers">
                             <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" alt="">
+                                <img [src]="data.pImage" alt="">
                                 <div class="p-icon-left">
                                     <button type="button" class="btn btn-secondary" title="Quick Shop">
                                         <i class="fa fa-heart-o"></i>
@@ -226,85 +229,9 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
-                                </h3>
-                            </div>
-                        </div>
-                        <!--  .............................2 product card..........................-->
-                        <!--second product card  -->
-                        <div class="col-md-3">
-                            <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" alt="">
-                                <div class="p-icon-left">
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product-buttom text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
-                                </h3>
-                            </div>
-                        </div>
-                        <!--  .............................3 product card..........................-->
-                        <div class="col-md-3">
-                            <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" alt="">
-                                <div class="p-icon-left">
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product-buttom text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
-                                </h3>
-                            </div>
-                        </div>
-                        <!--  .............................4 product card..........................-->
-                        <div class="col-md-3">
-                            <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" alt="">
-                                <div class="p-icon-left">
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product-buttom text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
+                                <h3 [innerHtml]="data.pName"></h3>
+                                <h3><i [innerHtml]="data.pPrice"></i>
+                                    <pre [innerHtml]="data.pWeight"></pre>
                                 </h3>
                             </div>
                         </div>
@@ -321,9 +248,9 @@
                     <!-- ........... best product banner................... -->
                     <!--  .............................1 product card..........................-->
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3" *ngFor="let data of homePagedata.bestOffers">
                             <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" w-100 alt="">
+                                <img [src]="data.pImage" w-100 alt="">
                                 <div class="p-icon-left">
                                     <button type="button" class="btn btn-secondary" title="Quick Shop">
                                         <i class="fa fa-heart-o"></i>
@@ -339,85 +266,9 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
-                                </h3>
-                            </div>
-                        </div>
-                        <!--  .............................2 product card..........................-->
-                        <!--second product card  -->
-                        <div class="col-md-3">
-                            <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" alt="">
-                                <div class="p-icon-left">
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product-buttom text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
-                                </h3>
-                            </div>
-                        </div>
-                        <!--  .............................3 product card..........................-->
-                        <div class="col-md-3">
-                            <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" alt="">
-                                <div class="p-icon-left">
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product-buttom text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
-                                </h3>
-                            </div>
-                        </div>
-                        <!--  .............................4 product card..........................-->
-                        <div class="col-md-3">
-                            <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" alt="">
-                                <div class="p-icon-left">
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product-buttom text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
+                                <h3 [innerHtml]="data.pName"></h3>
+                                <h3><i [innerHtml]="data.pPrice"></i>
+                                    <pre [innerHtml]="data.pWeight"></pre>
                                 </h3>
                             </div>
                         </div>
@@ -435,85 +286,9 @@
                     <!-- ........... best product banner................... -->
                     <!--  .............................1 product card..........................-->
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-3" *ngFor="let data of homePagedata.seasonOffers">
                             <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" w-100 alt="">
-                                <div class="p-icon-left">
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product-buttom text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
-                                </h3>
-                            </div>
-                        </div>
-                        <!--  .............................2 product card..........................-->
-                        <!--second product card  -->
-                        <div class="col-md-3">
-                            <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" alt="">
-                                <div class="p-icon-left">
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product-buttom text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
-                                </h3>
-                            </div>
-                        </div>
-                        <!--  .............................3 product card..........................-->
-                        <div class="col-md-3">
-                            <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" alt="">
-                                <div class="p-icon-left">
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-heart-o"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-secondary" title="Quick Shop">
-                                        <i class="fa fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="product-buttom text-center">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
-                                </h3>
-                            </div>
-                        </div>
-                        <!--  .............................4 product card..........................-->
-                        <div class="col-md-3">
-                            <div class="product-top">
-                                <img src="https://via.placeholder.com/300x250" alt="">
+                                <img [src]="data.pImage" w-100 alt="">
                                 <div class="p-icon-left">
                                     <button type="button" class="btn btn-secondary" title="Quick Shop">
                                         <i class="fa fa-heart-o"></i>
@@ -529,9 +304,9 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half-o"></i>
-                                <h3>Product-1</h3>
-                                <h3><i class="fa fa-rupee"></i>400.00
-                                    <pre>(5 KG)</pre>
+                                <h3 [innerHtml]="data.pName"></h3>
+                                <h3><i [innerHtml]="data.pPrice"></i>
+                                    <pre [innerHtml]="data.pWeight"></pre>
                                 </h3>
                             </div>
                         </div>

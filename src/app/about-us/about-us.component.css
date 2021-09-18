@@ -36,6 +36,9 @@
    width:100%;
    margin:auto;
 }
+.team-card{
+   margin-bottom: 50px;
+}
 .team-section .container .row .title{
    text-align:center;
    margin-top:50px;

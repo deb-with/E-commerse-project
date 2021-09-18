@@ -7,25 +7,28 @@
                         <h1 class="login-heading">Login</h1>
                     </div>
                     <hr class="text">
-                    <div class="mb-3">
+                    <div class="mb-3 form-group">
                         <label for="exampleInputEmail1" class="form-label">
                             <h4>Email ID<span class="text-danger">*</span></h4>
                         </label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName='userEmailId'>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            formControlName='userEmailId'>
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 form-group">
                         <label for="exampleInputPassword1" class="form-label">
                             <h4>Password<span class="text-danger">*</span></h4>
                         </label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" formControlName='userPass'>
+                        <input type="password" class="form-control" id="exampleInputPassword1"
+                            formControlName='userPass'>
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <p class="forget_password"><a routerLink="/forget-password" class="text-danger"><u>Forget password</u></a></p>
+                    <button type="submit" class="btn btn-primary" routerLink="#">Submit</button>
+                    <p class="forget_password"><a routerLink="/forget-password" class="text-danger"><u>Forget
+                                password</u></a></p>
                 </form>
             </div>
         </div>

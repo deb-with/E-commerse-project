@@ -9,9 +9,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { VegetablesComponent } from './vegetables/vegetables.component';
-import { FruitsComponent } from './fruits/fruits.component';
-import { GroceryComponent } from './grocery/grocery.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -19,6 +16,20 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
 import { AndroidAppComponent } from './android-app/android-app.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { VegetablesComponent } from './Categories/vegetables/vegetables.component';
+import { GroceryComponent } from './Categories/grocery/grocery.component';
+import { FruitsComponent } from './Categories/fruits/fruits.component';
+import { OnionComponent } from './Categories/vegetables/onion/onion.component';
+import { PotatoComponent } from './Categories/vegetables/potato/potato.component';
+import { RiceComponent } from './Categories/grocery/rice/rice.component';
+import { OilComponent } from './Categories/grocery/oil/oil.component';
+import { SugarComponent } from './Categories/grocery/sugar/sugar.component';
+import { MangoComponent } from './Categories/fruits/mango/mango.component';
+import { AppleComponent } from './Categories/fruits/apple/apple.component';
+import { GuavaComponent } from './Categories/fruits/guava/guava.component';
+import { ChiliComponent } from './Categories/vegetables/chili/chili.component';
+import { BananasComponent } from './Categories/fruits/bananas/bananas.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,16 +38,26 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     HeaderComponent,
     FooterComponent,
-    VegetablesComponent,
-    FruitsComponent,
-    GroceryComponent,
     PageNotFoundComponent,
     LoginComponent,
     RegisterComponent,
     ForgetPasswordComponent,
     AndroidAppComponent,
     ProductDetailsComponent,
-
+    VegetablesComponent,
+    GroceryComponent,
+    FruitsComponent,
+    OnionComponent,
+    PotatoComponent,
+    RiceComponent,
+    OilComponent,
+    SugarComponent,
+    MangoComponent,
+    AppleComponent,
+    GuavaComponent,
+    ChiliComponent,
+    BananasComponent,
+    
   ],
   imports: [
     BrowserModule,
