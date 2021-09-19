@@ -15,7 +15,7 @@ import { RegisterComponent } from './register/register.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { AndroidAppComponent } from './android-app/android-app.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VegetablesComponent } from './Categories/vegetables/vegetables.component';
 import { GroceryComponent } from './Categories/grocery/grocery.component';
 import { FruitsComponent } from './Categories/fruits/fruits.component';
@@ -63,6 +63,7 @@ import { BananasComponent } from './Categories/fruits/bananas/bananas.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     ReactiveFormsModule,
   ],
   providers: [],

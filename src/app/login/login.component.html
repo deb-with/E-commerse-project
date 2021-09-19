@@ -2,7 +2,7 @@
     <div class="container mt-5">
         <div class="row contain-center">
             <div class="col-12 col-sm-6 col-md-5">
-                <form class="form-container" [formGroup]=reactiveForm>
+                <form class="form-container" [formGroup]="reactiveForm">
                     <div class="col-mb-3">
                         <h1 class="login-heading">Login</h1>
                     </div>
@@ -12,21 +12,27 @@
                             <h4>Email ID<span class="text-danger">*</span></h4>
                         </label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            formControlName='userEmailId'>
+                            formControlName="userEmailId" required>
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <div *ngIf="reactiveForm.controls['userEmailId'].invalid && (reactiveForm.controls['userEmailId'].dirty || reactiveForm.controls['userEmailId'].touched)" class="alert">
+                            <p class="text-danger">*Please enter valid email id.</p> 
+                        </div>
                     </div>
                     <div class="mb-3 form-group">
                         <label for="exampleInputPassword1" class="form-label">
                             <h4>Password<span class="text-danger">*</span></h4>
                         </label>
                         <input type="password" class="form-control" id="exampleInputPassword1"
-                            formControlName='userPass'>
+                            formControlName="userPass" required>
+                            <div *ngIf="reactiveForm.controls['userPass'].invalid && (reactiveForm.controls['userPass'].dirty || reactiveForm.controls['userPass'].touched)" class="alert">
+                                <p class="text-danger">*Please enter correct password.</p> 
+                            </div>
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
-                    <button type="submit" class="btn btn-primary" routerLink="#">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                     <p class="forget_password"><a routerLink="/forget-password" class="text-danger"><u>Forget
                                 password</u></a></p>
                 </form>

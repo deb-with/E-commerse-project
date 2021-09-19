@@ -11,17 +11,17 @@ export class LoginComponent implements OnInit {
   public userPass: string='';
 
   public reactiveForm: FormGroup = this._formBuilder.group({
-    'userEmailId':['',Validators.required, Validators.pattern(/^[a-z]+$/)],
-    'userPass':['',Validators.required, Validators.minLength(4), Validators.maxLength(10)]
-  })
+    'userEmailId':['',[Validators.required,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
+    'userPass':['',[Validators.required,Validators.minLength(6),Validators.maxLength(10)]]
+  });
   constructor(private _formBuilder: FormBuilder) {}
    ngOnInit(){
     
   }
-   reactiveformSubmitted(){
-    // console.log(this.reactiveForm.value);
-    console.log(this.reactiveForm.controls);
-  }
+  //  reactiveFormSubmitted(){
+  //   // console.log(this.reactiveForm.value.userEmailId);
+  //   console.log(this.reactiveForm.controls);
+  // }
   
 
 }
