@@ -22,11 +22,13 @@
     padding-left:30px;
     font-size:20px;
     margin-right:50px;
+    /* margin-top: -93px; */
     
 }
 .contact-info i {
     margin-right:20px;
     font-size:20px;
+   
 }
 .contact-form{
     max-width:700px;
@@ -36,13 +38,14 @@
     flex:1;
 }
 .contact-form h2{
-    color:#fff;
+    color:#000;
     text-align:left;
     font-size:30px;
     text-transform: uppercase;
-    margin-bottom:100px;
+    margin-bottom:50px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
+    margin-top: 50px;
    
 }
 .contact-form .text-box{
