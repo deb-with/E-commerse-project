@@ -24,68 +24,75 @@ import { MangoComponent } from './Categories/fruits/mango/mango.component';
 
 
 const routes: Routes = [
-  { path:'', pathMatch:'full',redirectTo:'/index'},
-  { path:'index', component:HomeComponent},
-  { path:'about-us',component:AboutUsComponent},
-  { path:'contact', component:ContactComponent},
-  { path:'login',component:LoginComponent},
-  { path:'forget-password',component:ForgetPasswordComponent},
-  { path:'register',component:RegisterComponent},
-  { path:'android-app',component:AndroidAppComponent},
-  { path:'product-details',component:ProductDetailsComponent},
- {
-   path:'Categories',
-   children:[
-     { path:'vegetables',component:VegetablesComponent},
-     { path:'grocery',component:GroceryComponent},
-     { path:'fruits',component:FruitsComponent}
-   ]
- },
-//  vegetables accordian path declear
-{
-  path:'Categories',
-  children:[
-    { path:'vegetables',
-        children:[
-          { path:'chili',component:ChiliComponent},
-          { path:'onion',component:OnionComponent},
-          { path:'potato',component:PotatoComponent}
-        ]
-    }
-  ]
-},
+  { path: '', pathMatch: 'full', redirectTo: '/index' },
+  { path: 'index', component: HomeComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'forget-password', component: ForgetPasswordComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'android-app', component: AndroidAppComponent },
 
-// grocery accordian path declear
-{
-  path:'Categories',
-  children:[
-    { path:'grocery',
-        children:[
-          { path:'oil',component:OilComponent},
-          { path:'rice',component:RiceComponent},
-          { path:'sugar',component:SugarComponent}
+  {
+    path: 'Categories',
+    children: [
+      { path: 'vegetables', component: VegetablesComponent },
+      { path: 'grocery', component: GroceryComponent },
+      { path: 'fruits', component: FruitsComponent }
+    ]
+  },
+  { path: 'index/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/vegetables/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/grocery/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/fruits/:prodId', component: ProductDetailsComponent },
+  //  vegetables accordian path declear
+  {
+    path: 'Categories',
+    children: [
+      {
+        path: 'vegetables',
+        children: [
+          { path: 'chili', component: ChiliComponent },
+          { path: 'onion', component: OnionComponent },
+          { path: 'potato', component: PotatoComponent }
         ]
-    }
- 
-  ]
-},
-//fruits accordian path declear
-{
-  path:'Categories',
-  children:[
-    { path:'fruits',
-        children:[
-          { path:'apple', component:AppleComponent},
-          { path:'bananas', component:BananasComponent},
-          { path:'mango', component:MangoComponent}
+      }
+    ]
+  },
+
+  // grocery accordian path declear
+  {
+    path: 'Categories',
+    children: [
+      {
+        path: 'grocery',
+        children: [
+          { path: 'oil', component: OilComponent },
+          { path: 'rice', component: RiceComponent },
+          { path: 'sugar', component: SugarComponent }
         ]
-    }
- 
-  ]
-},
- 
-//page not found path
-  { path:'**', component:PageNotFoundComponent}
+      }
+
+    ]
+  },
+  //fruits accordian path declear
+  {
+    path: 'Categories',
+    children: [
+      {
+        path: 'fruits',
+        children: [
+          { path: 'apple', component: AppleComponent },
+          { path: 'bananas', component: BananasComponent },
+          { path: 'mango', component: MangoComponent }
+        ]
+      }
+
+    ]
+  },
+
+  //page not found path
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
