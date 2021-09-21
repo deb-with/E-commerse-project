@@ -1,4 +1,4 @@
-export const HomePagedata={
+const HomePagedata={
 // bankOffers:[{
 //         id:1,
 //         pimage:`https://via.placeholder.com/250x250`
@@ -92,7 +92,7 @@ seasonOffers:[{
 }]
 };
 // category part
-export const VegetablesPagedata={
+const VegetablesPagedata={
     vegetables:[{
         id:1,
         pImage:`https://via.placeholder.com/250x250`,
@@ -167,7 +167,7 @@ export const VegetablesPagedata={
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     }]
 };
-export const GroceryPagedata={
+const GroceryPagedata={
     grocery:[{
         id:1,
         pImage:`https://via.placeholder.com/250x250`,
@@ -242,7 +242,7 @@ export const GroceryPagedata={
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     }]
 };
-export const FruitsPagedata={
+const FruitsPagedata={
     fruits:[{
         id:1,
         pImage:`https://via.placeholder.com/250x250`,
@@ -318,7 +318,7 @@ export const FruitsPagedata={
     }]
 };
 // accordian vegetables part
-export const OnionPagedata={
+const OnionPagedata={
 onion:[{
     id:1,
     pImage:`https://via.placeholder.com/250x250`,
@@ -369,7 +369,7 @@ onion:[{
     pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
   }]
 };
-export const ChiliPagedata={
+const ChiliPagedata={
     chili:[{
         id:1,
         pImage:`https://via.placeholder.com/250x250`,
@@ -420,7 +420,7 @@ export const ChiliPagedata={
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
       }]
 };
-export const PotatoPagedata={
+const PotatoPagedata={
     potato:[{
         id:1,
         pImage:`https://via.placeholder.com/250x250`,
@@ -473,7 +473,7 @@ export const PotatoPagedata={
 };
 
 // accordian grocery part
-export const OilPagedata={
+const OilPagedata={
     oil:[{
         id:1,
         pImage:`https://via.placeholder.com/250x250`,
@@ -524,7 +524,7 @@ export const OilPagedata={
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
       }]
 };
-export const RicePagedata={
+const RicePagedata={
         rice:[{
             id:1,
             pImage:`https://via.placeholder.com/250x250`,
@@ -575,7 +575,7 @@ export const RicePagedata={
             pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
           }]
 };
-export const SugarPagedata={
+const SugarPagedata={
         sugar:[{
             id:1,
             pImage:`https://via.placeholder.com/250x250`,
@@ -629,7 +629,7 @@ export const SugarPagedata={
 
 
 // accordian fruits part
-export const ApplePagedata={
+const ApplePagedata={
     apple:[{
         id:1,
         pImage:`https://via.placeholder.com/250x250`,
@@ -680,7 +680,7 @@ export const ApplePagedata={
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
       }]
 };
-export const BananasPagedata={
+const BananasPagedata={
         bananas:[{
             id:1,
             pImage:`https://via.placeholder.com/250x250`,
@@ -731,7 +731,7 @@ export const BananasPagedata={
             pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
           }]
 };
-export const MangoPagedata={
+const MangoPagedata={
         mango:[{
             id:1,
             pImage:`https://via.placeholder.com/250x250`,
@@ -782,7 +782,7 @@ export const MangoPagedata={
             pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
           }]
 };
-export const GuavaPagedata={
+const GuavaPagedata={
   guava:[{
       id:1,
       pImage:`https://via.placeholder.com/250x250`,
@@ -833,3 +833,20 @@ export const GuavaPagedata={
       pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
     }]
 };
+
+export {
+  HomePagedata,
+  VegetablesPagedata,
+  GroceryPagedata,
+  FruitsPagedata,
+  OnionPagedata,
+  ChiliPagedata,
+  PotatoPagedata,
+  OilPagedata,
+  RicePagedata,
+  SugarPagedata,
+  ApplePagedata,
+  BananasPagedata,
+  MangoPagedata,
+  GuavaPagedata
+}

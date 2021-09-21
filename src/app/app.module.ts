@@ -29,6 +29,9 @@ import { AppleComponent } from './Categories/fruits/apple/apple.component';
 import { GuavaComponent } from './Categories/fruits/guava/guava.component';
 import { ChiliComponent } from './Categories/vegetables/chili/chili.component';
 import { BananasComponent } from './Categories/fruits/bananas/bananas.component';
+import { CartService } from './cart.service';
+import { CartComponent } from './cart/cart.component';
+import { BuyNowComponent } from './buy-now/buy-now.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +60,8 @@ import { BananasComponent } from './Categories/fruits/bananas/bananas.component'
     GuavaComponent,
     ChiliComponent,
     BananasComponent,
-    
+    CartComponent,
+    BuyNowComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,7 +70,7 @@ import { BananasComponent } from './Categories/fruits/bananas/bananas.component'
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

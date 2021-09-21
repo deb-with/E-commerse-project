@@ -21,6 +21,8 @@ import { SugarComponent } from './Categories/grocery/sugar/sugar.component';
 import { AppleComponent } from './Categories/fruits/apple/apple.component';
 import { BananasComponent } from './Categories/fruits/bananas/bananas.component';
 import { MangoComponent } from './Categories/fruits/mango/mango.component';
+import { CartComponent } from './cart/cart.component';
+import { BuyNowComponent } from './buy-now/buy-now.component';
 
 
 const routes: Routes = [
@@ -45,6 +47,8 @@ const routes: Routes = [
   { path: 'Categories/vegetables/:prodId', component: ProductDetailsComponent },
   { path: 'Categories/grocery/:prodId', component: ProductDetailsComponent },
   { path: 'Categories/fruits/:prodId', component: ProductDetailsComponent },
+  { path: 'cart',component:CartComponent},
+  { path: 'buy-now',component:BuyNowComponent},
   //  vegetables accordian path declear
   {
     path: 'Categories',

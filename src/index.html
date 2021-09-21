@@ -2,60 +2,116 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Inditex</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script type="text/javascript">
-    var product_total_amt = document.getElementById('product_total_amt');
-    var total_cart_amt = document.getElementById('total_cart_amt');
-    var Shipping_charge = document.getElementById('Shipping_charge');
-    //var discount_code =document.getElementById('discountcode');
-    const decreaseNumber = (incdec, itemprice) => {
-        var itemval = document.getElementById(incdec);
-        var itemprice = document.getElementById(itemprice);
-        //console.log(itemval.value);
+    <meta charset="utf-8">
+    <title>Inditex</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--  -->
+    <script type="text/javascript">
+        // for product-details page
+        var product_total_amt = document.getElementById('product_total_amt');
+        var total_cart_amt = document.getElementById('total_cart_amt');
+        var Shipping_charge = document.getElementById('Shipping_charge');
+        //var discount_code =document.getElementById('discountcode');
+        const decreaseNumber = (incdec, itemprice) => {
+            var itemval = document.getElementById(incdec);
+            var itemprice = document.getElementById(itemprice);
+            //console.log(itemval.value);
 
-        if (itemval.value <= 0) {
-            itemval.value = 0;
-            alert('atleast select one item');
-        }
-        else {
-            itemval.value = parseInt(itemval.value) - 1;
-            itemval.style.background = '#fff';
-            itemval.value.color = '000';
-            itemprice.innerHTML = parseInt(itemprice.innerHTML) - 50;
-            //console.log(itemprice.innerHTML);
-            product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) - 50;
+            if (itemval.value <= 0) {
+                itemval.value = 0;
+                alert('atleast select one item');
+            }
+            else {
+                itemval.value = parseInt(itemval.value) - 1;
+                itemval.style.background = '#fff';
+                itemval.value.color = '000';
+                itemprice.innerHTML = parseInt(itemprice.innerHTML) - 50;
+                //console.log(itemprice.innerHTML);
+                product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) - 50;
 
-            total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(Shipping_charge.innerHTML);
+                total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(Shipping_charge.innerHTML);
+            }
         }
-    }
-    const increaseNumber = (incdec, itemprice) => {
-        var itemval = document.getElementById(incdec);
-        var itemprice = document.getElementById(itemprice);
-        //console.log(itemval.value);
+        const increaseNumber = (incdec, itemprice) => {
+            var itemval = document.getElementById(incdec);
+            var itemprice = document.getElementById(itemprice);
+            //console.log(itemval.value);
 
-        if (itemval.value >= 5) {
-            itemval.value = 5;
-            alert('max 5 items allowed');
-            itemval.style.background = 'red';
-            itemval.value.color = '#fff';
+            if (itemval.value >= 5) {
+                itemval.value = 5;
+                alert('max 5 items allowed');
+                itemval.style.background = 'red';
+                itemval.value.color = '#fff';
+            }
+            else {
+                itemval.value = parseInt(itemval.value) + 1;
+                itemprice.innerHTML = parseInt(itemprice.innerHTML) + 50;
+                product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) + 50;
+                total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(Shipping_charge.innerHTML);
+            }
         }
-        else {
-            itemval.value = parseInt(itemval.value) + 1;
-            itemprice.innerHTML = parseInt(itemprice.innerHTML) + 50;
-            product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) + 50;
-            total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + parseInt(Shipping_charge.innerHTML);
-        }
-    }
 
-</script>
+    </script>
+    <!-- // for buy-now page   -->
+    <!-- <script>
+        $('#validate').validate({
+            roles: {
+                fullname: {
+                    required: true,
+                },
+                email: {
+                    required: true,
+                },
+                address: {
+                    required: true,
+                },
+                city: {
+                    required: true,
+                },
+                state: {
+                    required: true,
+                },
+                zip: {
+                    required: true,
+                },
+                cardname: {
+                    required: true,
+                },
+                cardnumber: {
+                    required: true,
+                },
+                expmonth: {
+                    required: true,
+                },
+                expyear: {
+                    required: true,
+                },
+                cvv: {
+                    required: true,
+                },
+
+            },
+            messages: {
+                fullname: "Please input full name*",
+                email: "Please input email*",
+                city: "Please input city*",
+                address: "Please input address*",
+                state: "Please input state*",
+                zip: "Please input address*",
+                cardname: "Please input card name*",
+                cardnumber: "Please input card number*",
+                expmonth: "Please input exp month*",
+                expyear: "Please input exp year*",
+                cvv: "Please input cvv*",
+            },
+        });
+    </script> -->
 </head>
 
 <body>
-  <app-root></app-root>
+    <app-root></app-root>
 </body>
 
 </html>
