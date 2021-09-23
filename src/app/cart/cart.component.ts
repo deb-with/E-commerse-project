@@ -77,7 +77,14 @@ export class CartComponent implements OnInit {
   }
   */
 
-
+  // public removeCartItem:any{
+  //   let total:number=0;
+    
+  //   return total;
+  // }
+//  public removeItem():any{
+//    localStorage.removeItem("homePagedata");
+//  }
   // for home page
   public homePagedata: any = [];
 
@@ -161,6 +168,8 @@ export class CartComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
+    
   }
   
 

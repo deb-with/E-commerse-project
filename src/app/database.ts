@@ -24,21 +24,21 @@ topOffers:[{
     },{
         id:2,
         pImage:`/assets/image/groceries/black salt.jpg`,
-        pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
-        pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
-        pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
+        pName:`Salt`,
+        pPrice: `50`,
+        pWeight:`(3 KG)`
     },{
         id:3,
         pImage:`/assets/image/groceries/honey.jpg`,
-        pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
-        pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
-        pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
+        pName:`Honey`,
+        pPrice: `550`,
+        pWeight:`(2 KG)`
     },{
         id:4,
         pImage:`/assets/image/groceries/meat masala powder.jpg`,
-        pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
-        pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
-        pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
+        pName:`Meat Masala Powder`,
+        pPrice: `150`,
+        pWeight:`(250 gm)`
     }],
 bestOffers:[{
     id:5,

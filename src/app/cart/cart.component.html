@@ -1,34 +1,40 @@
 <h1 *ngIf="homePagedata.length == 0">No item in cart</h1>
-<ng-container *ngIf="homePagedata.length > 0">
-    <table class="table table-hover text-center table-striped">
-        <thead class="bg-secondary text-white">
-            <tr>
-                <th>Id</th>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Weight</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody *ngFor="let data of homePagedata">
-            <tr >
-                <td>{{data.id}}</td>
-                <td><img src="{{data.pImage}}" alt="" class="src" width="30" height="30"></td>
-                <td>{{data.pName}}</td>
-                <td >
-                    {{data.pPrice}}
-                </td>
-                <td>{{data.pWeight}}</td>
-            </tr>
-        </tbody>
-    </table>
-    <!-- <div *ngFor="let data of homePagedata">
+<div class="container cart-page">
+    <div class="row">
+        <div class="col-md-8">
+            <ng-container *ngIf="homePagedata.length > 0">
+                <table class="table table-hover text-center table-striped">
+                    <thead class="bg-secondary text-white">
+                        <tr>
+                            <th>Id</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Weight</th>
+                            <!-- <th>Total</th> -->
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr *ngFor="let data of homePagedata">
+                            <td>{{data.id}}</td>
+                            <td><img src="{{data.pImage}}" alt="" class="src" width="30" height="30"></td>
+                            <td>{{data.pName}}</td>
+                            <td> {{data.pPrice}} </td>
+                            <td>{{data.pWeight}}</td>
+                            <td><i class="fa fa-remove"></i></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <!-- <div *ngFor="let data of homePagedata">
             id: {{data.id}}
             <img src="{{data.pImage}}" alt="" class="src">
     </div> -->
-</ng-container>
-
+            </ng-container>
+        </div>
+    </div>
+</div>
 <!-- <section class="mt-3">
     <ng-container *ngIf="homePagedata.length > 0">
     <div class="container">
@@ -74,7 +80,6 @@
 </ng-container>
 
 </section> -->
-
 <!-- <section class="mt-3">
     <div class="container">
         <div class="row">
