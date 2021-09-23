@@ -22,7 +22,7 @@
                             <td>{{data.pName}}</td>
                             <td> {{data.pPrice}} </td>
                             <td>{{data.pWeight}}</td>
-                            <td><i class="fa fa-remove"></i></td>
+                            <td><i (click)="singleDelete(data.id)"class="fa fa-remove"></i></td>
                         </tr>
                         
                     </tbody>

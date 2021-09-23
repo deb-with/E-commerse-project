@@ -10,6 +10,7 @@ import { FruitsPagedata } from '../database';
 //   pPrice:number;
 //   pQty:number;
 // }
+
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -19,27 +20,6 @@ export class CartComponent implements OnInit {
  /* public products:Product[]=[
     {
       pId:`a101`,
-      pName:`ddd`,
-      pImage:`https://via.placeholder.com/200x200`,
-      pPrice:120,
-      pQty:2
-    },
-    {
-      pId:`a102`,
-      pName:`ddd`,
-      pImage:`https://via.placeholder.com/200x200`,
-      pPrice:120,
-      pQty:2
-    },
-    {
-      pId:`a103`,
-      pName:`ddd`,
-      pImage:`https://via.placeholder.com/200x200`,
-      pPrice:120,
-      pQty:2
-    },
-    {
-      pId:`a104`,
       pName:`ddd`,
       pImage:`https://via.placeholder.com/200x200`,
       pPrice:120,
@@ -76,20 +56,27 @@ export class CartComponent implements OnInit {
     return total;
   }
   */
+ 
+  singleDelete(data:any){
+    console.log(data.id);
+    if(localStorage.getItem('cartItem')){
+      // this.homePagedata = JSON.parse(localStorage.getItem('cartItem') as any);
+      for(let i=0; i<this.homePagedata.length;i++){
+          if(this.homePagedata[i].id ===data){
+            this.homePagedata.splice(i, 1);
+            localStorage.setItem('cartItem',JSON.stringify(this.homePagedata));
+          }
+      }
+    }
+  }
+  
 
-  // public removeCartItem:any{
-  //   let total:number=0;
-    
-  //   return total;
-  // }
-//  public removeItem():any{
-//    localStorage.removeItem("homePagedata");
-//  }
   // for home page
   public homePagedata: any = [];
 
   constructor() { 
     let cartData = localStorage.getItem('cartItem');
+    
     if(typeof cartData !== 'undefined' && cartData != null) {
       let cartDataObj = JSON.parse(cartData);
       if(cartDataObj != null) {
@@ -172,5 +159,4 @@ export class CartComponent implements OnInit {
     
   }
   
-
 }
