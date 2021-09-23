@@ -47,6 +47,7 @@ const routes: Routes = [
   { path: 'Categories/vegetables/:prodId', component: ProductDetailsComponent },
   { path: 'Categories/grocery/:prodId', component: ProductDetailsComponent },
   { path: 'Categories/fruits/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/vegetables/potato/:prodId', component: ProductDetailsComponent },
   { path: 'cart',component:CartComponent},
   { path: 'buy-now',component:BuyNowComponent},
   //  vegetables accordian path declear

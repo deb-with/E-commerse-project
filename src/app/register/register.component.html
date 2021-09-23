@@ -7,12 +7,12 @@
                 </div>
                 <div class="card-body p-4 p-sm-5 ">
                     <h5 class="card-title text-center mb-5 fw-primary fs-5 text-danger">Register</h5>
-                    <form [formGroup]="reactiveForm">
+                    <form [formGroup]="reactiveForm" (ngSubmit)="isFormSubmitted = true">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="floatingInputUsername"
                                 placeholder="myusername" formControlName="userName" required>
                             <label for="floatingInputUsername ">Username</label>
-                            <div *ngIf="reactiveForm.controls['userName'].invalid && (reactiveForm.controls['userName'].dirty || reactiveForm.controls['userName'].touched)" class="alert">
+                            <div *ngIf="reactiveForm.controls['userName'].invalid && (reactiveForm.controls['userName'].dirty || reactiveForm.controls['userName'].touched || isFormSubmitted)" class="alert">
                                 <!-- <div *ngIf="reactiveForm.controls['userName'].errors.required"> -->
                                 <p class="text-danger">*Please enter valid username.</p> 
                               <!-- </div> -->
@@ -22,7 +22,7 @@
                             <input type="email" class="form-control" id="floatingInputEmail"
                                 placeholder="name@example.com" formControlName="userEmailId" required>
                             <label for="floatingInputEmail">Email Id</label>
-                            <div *ngIf="reactiveForm.controls['userEmailId'].invalid && (reactiveForm.controls['userEmailId'].dirty || reactiveForm.controls['userEmailId'].touched)" class="alert">
+                            <div *ngIf="reactiveForm.controls['userEmailId'].invalid && (reactiveForm.controls['userEmailId'].dirty || reactiveForm.controls['userEmailId'].touched || isFormSubmitted)" class="alert">
                                 <p class="text-danger">*Please enter valid email id.</p> 
                             </div>
                         </div>
@@ -31,7 +31,7 @@
                             <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
                                 formControlName="userPass" required>
                             <label for="floatingPassword">Password</label>
-                            <div *ngIf="reactiveForm.controls['userPass'].invalid && (reactiveForm.controls['userPass'].dirty || reactiveForm.controls['userPass'].touched)" class="alert">
+                            <div *ngIf="reactiveForm.controls['userPass'].invalid && (reactiveForm.controls['userPass'].dirty || reactiveForm.controls['userPass'].touched || isFormSubmitted)" class="alert">
                                 <p class="text-danger">*Please enter strong password.</p> 
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                             <input type="password" class="form-control" id="floatingPasswordConfirm"
                                 placeholder="Confirm Password" formControlName="userPassConfirm" required>
                             <label for="floatingPasswordConfirm ">Confirm Password</label>
-                            <div *ngIf="reactiveForm.controls['userPassConfirm'].invalid && (reactiveForm.controls['userPassConfirm'].dirty || reactiveForm.controls['userPassConfirm'].touched)" class="alert">
+                            <div *ngIf="reactiveForm.controls['userPassConfirm'].invalid && (reactiveForm.controls['userPassConfirm'].dirty || reactiveForm.controls['userPassConfirm'].touched )" class="alert">
                                 <p class="text-danger">*Password did not match.</p> 
                             </div>
                         </div>

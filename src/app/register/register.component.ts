@@ -27,7 +27,7 @@ export class RegisterComponent implements OnInit {
   public userPass: string = '';
   public userPassConfirm: string = '';
   public button:any='';
-
+public isFormSubmitted:boolean=false;
   public reactiveForm: FormGroup = this._formBuilder.group({
     'userName': ['', [Validators.required, Validators.pattern(/^[a-zA-Z]+$/)]],
     'userEmailId': ['', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],

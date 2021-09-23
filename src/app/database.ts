@@ -17,75 +17,75 @@ const HomePagedata={
 
 topOffers:[{
         id:1,
-        pImage:`https://via.placeholder.com/250x250`,
-        pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
-        pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
-        pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
+        pImage:`/assets/image/Fruits/Red apple.jpg`,
+        pName:`Apple`,
+        pPrice: `100`,
+        pWeight:`(2 KG)`
     },{
         id:2,
-        pImage:`https://via.placeholder.com/250x250`,
+        pImage:`/assets/image/groceries/black salt.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
         id:3,
-        pImage:`https://via.placeholder.com/250x250`,
+        pImage:`/assets/image/groceries/honey.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
     },{
         id:4,
-        pImage:`https://via.placeholder.com/250x250`,
+        pImage:`/assets/image/groceries/meat masala powder.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     }],
 bestOffers:[{
-    id:1,
-    pImage:`https://via.placeholder.com/250x250`,
+    id:5,
+    pImage:`/assets/image/Fruits/mango1.jpg`,
     pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
     pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
     pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
 },{
-    id:2,
-    pImage:`https://via.placeholder.com/250x250`,
+    id:6,
+    pImage:`/assets/image/Fruits/orange1.jpg`,
     pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
     pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
     pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
 },{
-    id:3,
-    pImage:`https://via.placeholder.com/250x250`,
+    id:7,
+    pImage:`/assets/image/Veg/brinjal1.jpg`,
     pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
     pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
     pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
 },{
-    id:4,
-    pImage:`https://via.placeholder.com/250x250`,
+    id:8,
+    pImage:`/assets/image/Veg/Carrots1.jpg`,
     pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
     pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
     pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
 }],
 seasonOffers:[{
-    id:1,
-    pImage:`https://via.placeholder.com/250x250`,
+    id:9,
+    pImage:`/assets/image/Veg/cauliflower1.jpg`,
     pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
     pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
     pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
 },{
-    id:2,
-    pImage:`https://via.placeholder.com/250x250`,
+    id:10,
+    pImage:`/assets/image/Veg/Chilli4.jpg`,
     pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
     pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
     pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
 },{
-    id:3,
-    pImage:`https://via.placeholder.com/250x250`,
+    id:11,
+    pImage:`/assets/image/Veg/Potatoes1.jpg`,
     pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
     pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
     pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
 },{
-    id:4,
-    pImage:`https://via.placeholder.com/250x250`,
+    id:12,
+    pImage:`/assets/image/Veg/raddhish2.jpg`,
     pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
     pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
     pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
@@ -94,74 +94,74 @@ seasonOffers:[{
 // category part
 const VegetablesPagedata={
     vegetables:[{
-        id:1,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`v1`,
+        pImage:`/assets/image/Veg/cauliflower1.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
     },{
-        id:2,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`v2`,
+        pImage:`/assets/image/Veg/Chilli4.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:3,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`v3`,
+        pImage:`/assets/image/Veg/Geen chilli1.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
     },{
-        id:4,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`v4`,
+        pImage:`/assets/image/Veg/pointed gourd1.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:5,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`v5`,
+        pImage:`/assets/image/Veg/raddish1.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
     },{
-        id:6,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`v6`,
+        pImage:`/assets/image/Veg/red chilli.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:7,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`v7`,
+        pImage:`/assets/image/Veg/Tomatoes1.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
     },{
-        id:8,
-        pImage:`https://via.placeholder.com/250x250`,
+        id: `v8`,
+        pImage:`/assets/image/Veg/yellow chilli3.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:9,
-        pImage:`https://via.placeholder.com/250x250`,
+        id: `v9`,
+        pImage:`/assets/image/Veg/cauliflower2.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
     },{
-        id:10,
-        pImage:`https://via.placeholder.com/250x250`,
+        id: `v10`,
+        pImage:`/assets/image/Veg/pointed gourd4.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:11,
-        pImage:`https://via.placeholder.com/250x250`,
+        id: `v11`,
+        pImage:`/assets/image/Veg/raddish3.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
     },{
-        id:12,
-        pImage:`https://via.placeholder.com/250x250`,
+        id: `v12`,
+        pImage:`/assets/image/Veg/bitter gourd3.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
@@ -169,74 +169,74 @@ const VegetablesPagedata={
 };
 const GroceryPagedata={
     grocery:[{
-        id:1,
-        pImage:`https://via.placeholder.com/250x250`,
+        id: `g1`,
+        pImage:`/assets/image/groceries/biriyanimasala.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
     },{
-        id:2,
-        pImage:`https://via.placeholder.com/250x250`,
+        id: `g2`,
+        pImage:`/assets/image/groceries/blacksalt.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:3,
-        pImage:`https://via.placeholder.com/250x250`,
+        id: `g3`,
+        pImage:`/assets/image/groceries/brownsugar.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
     },{
-        id:4,
-        pImage:`https://via.placeholder.com/250x250`,
+        id: `g4`,
+        pImage:`/assets/image/groceries/gheeimage.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:5,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`g5`,
+        pImage:`/assets/image/groceries/honey.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
     },{
-        id:6,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`g6`,
+        pImage:`/assets/image/groceries/meat masala powder.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:7,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`g7`,
+        pImage:`/assets/image/groceries/mustard oil.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
     },{
-        id:8,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`g8`,
+        pImage:`/assets/image/groceries/postopowder.png`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:9,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`g9`,
+        pImage:`/assets/image/groceries/soyabinoil2.png`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
     },{
-        id:10,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`g10`,
+        pImage:`/assets/image/groceries/sugar1.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:11,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`g11`,
+        pImage:`/assets/image/groceries/sugarfree.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
     },{
-        id:12,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`g12`,
+        pImage:`/assets/image/groceries/termericpowder.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
@@ -244,74 +244,74 @@ const GroceryPagedata={
 };
 const FruitsPagedata={
     fruits:[{
-        id:1,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f1`,
+        pImage:`/assets/image/Fruits/mango3.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
     },{
-        id:2,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f2`,
+        pImage:`/assets/image/Fruits/guava5.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:3,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f3`,
+        pImage:`/assets/image/Fruits/pears images.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
     },{
-        id:4,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f4`,
+        pImage:`/assets/image/Fruits/orange4.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:5,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f5`,
+        pImage:`/assets/image/Fruits/Red apple.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
     },{
-        id:6,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f6`,
+        pImage:`/assets/image/Fruits/green guava imahes.jpeg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:7,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f7`,
+        pImage:`/assets/image/Fruits/red mango.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
     },{
-        id:8,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f8`,
+        pImage:`/assets/image/Fruits/shaded appple.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:9,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f9`,
+        pImage:`/assets/image/Fruits/small banana.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">100</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(2 KG)</pre>`
     },{
-        id:10,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f10`,
+        pImage:`/assets/image/Fruits/green mango.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">150</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`
     },{
-        id:11,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f11`,
+        pImage:`/assets/image/Fruits/green aaple.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">250</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(5 KG)</pre>`
     },{
-        id:12,
-        pImage:`https://via.placeholder.com/250x250`,
+        id:`f12`,
+        pImage:`/assets/image/Fruits/big banana.jpg`,
         pName:`<h3 _ngcontent-wro-c52="">Product-1</h3>`,
         pPrice: `<i _ngcontent-wro-c52="" class="fa fa-rupee">170</i>`,
         pWeight:`<pre _ngcontent-wro-c52="">(3 KG)</pre>`

@@ -104,10 +104,11 @@
                     </div>
                     <!-- hr -->
                     <!-- <hr class="line"> -->
+                    
                     <div class="row">
                         <div class="col-md-3" *ngFor="let data of potatoPagedata.potato">
                             <div class="product-top">
-                                <img [src]="data.pImage" alt="">
+                                <img  routerLink="'Categories/vegetables/potato/'+ data.id" [src]="data.pImage" alt="">
                                 <div class="p-icon-left">
                                     <button type="button" class="btn btn-secondary" title="Quick Shop">
                                         <i class="fa fa-heart-o"></i>

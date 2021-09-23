@@ -14,17 +14,17 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="https://via.placeholder.com/1920x500" class="d-block w-100" alt="...">
+                            <img src="/assets/image/banner Vegetables_2015-09-17a.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="https://via.placeholder.com/1920x500" class="d-block w-100" alt="...">
+                            <img src="/assets/image/banner fresh-raw-vegetables-banner-wooden-background-111820528.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="https://via.placeholder.com/1920x500" class="d-block w-100" alt="...">
+                            <img src="/assets/image/banner vegetable organic-.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-heart-o"></i>
                             </button>
-                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop" (click)="addtocart(vegetablesPagedata.vegetables[i].id)">
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>
@@ -89,7 +89,7 @@
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-heart-o"></i>
                             </button>
-                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop" (click)="addtocart(vegetablesPagedata.vegetables[i+1].id)">
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>
@@ -116,7 +116,7 @@
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-heart-o"></i>
                             </button>
-                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop" (click)="addtocart(vegetablesPagedata.vegetables[i+2].id)">
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>
@@ -143,7 +143,7 @@
                             <button type="button" class="btn btn-secondary" title="Quick Shop">
                                 <i class="fa fa-heart-o"></i>
                             </button>
-                            <button type="button" class="btn btn-secondary" title="Quick Shop">
+                            <button type="button" class="btn btn-secondary" title="Quick Shop" (click)="addtocart(vegetablesPagedata.vegetables[i+3].id)">
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>

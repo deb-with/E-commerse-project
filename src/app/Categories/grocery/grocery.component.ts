@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GroceryPagedata as gp } from 'src/app/database';
+import { CartService } from 'src/app/cart.service';
 @Component({
   selector: 'app-grocery',
   templateUrl: './grocery.component.html',
@@ -7,11 +8,13 @@ import { GroceryPagedata as gp } from 'src/app/database';
 })
 export class GroceryComponent implements OnInit {
 public groceryPagedata:any={};
-  constructor() { 
+  constructor(private _cartservice:CartService) { 
     this.groceryPagedata=gp;
   }
 
   ngOnInit(): void {
   }
-
+  addtocart(prodId : string){
+    this._cartservice.setCart(prodId);
+  }
 }
