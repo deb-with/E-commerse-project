@@ -4,6 +4,7 @@ import { HomePagedata,FruitsPagedata,GroceryPagedata,
   VegetablesPagedata,OnionPagedata,ChiliPagedata,
   PotatoPagedata,OilPagedata,RicePagedata,SugarPagedata,
   ApplePagedata,BananasPagedata,MangoPagedata } from '../database';
+import { Title } from '@angular/platform-browser';
 
 /*interface Product{
   pId:string;
@@ -50,7 +51,8 @@ export class ProductDetailsComponent implements OnInit {
   }*/
   public pagedata: any={};
 
-  constructor(private _activatedRoute: ActivatedRoute, private _router: Router) { 
+  constructor(private _activatedRoute: ActivatedRoute, private _router: Router,private _title: Title ) {
+    this._title.setTitle('Product-Details Page');
     this._activatedRoute.params.subscribe(param => {
       let flag = 0;
       for(let data of HomePagedata.topOffers){

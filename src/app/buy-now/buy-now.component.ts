@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Validators } from '@angular/forms';
-
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-buy-now',
   templateUrl: './buy-now.component.html',
@@ -8,7 +8,9 @@ import { Validators } from '@angular/forms';
 })
 export class BuyNowComponent implements OnInit {
 // public validators:any={};
-  constructor() { }
+  constructor(private _title: Title ) { 
+    this._title.setTitle('Buy-Now Page');
+  }
 
   ngOnInit(): void {
   

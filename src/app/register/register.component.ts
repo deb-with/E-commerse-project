@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
-
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -35,7 +35,8 @@ public isFormSubmitted:boolean=false;
     'userPassConfirm': ['', [this.passwordChecker.bind(this)]],
     'button':['',[Validators.required]]
   });
-  constructor(private _formBuilder: FormBuilder) { }
+  constructor(private _formBuilder: FormBuilder,private _title: Title ) {
+     this._title.setTitle('Register Page');}
   passwordChecker() {
     if (typeof this.reactiveForm !== 'undefined') {
       console.log(this.reactiveForm);

@@ -5,6 +5,7 @@ import { GroceryPagedata } from '../database';
 import { FruitsPagedata } from '../database';
 import { OnionPagedata,ChiliPagedata,PotatoPagedata,OilPagedata,RicePagedata,SugarPagedata,
   ApplePagedata,BananasPagedata,MangoPagedata } from '../database';
+import { Title } from '@angular/platform-browser';
 // interface Product{
 //   pId:string;
 //   pName:string;
@@ -75,7 +76,8 @@ export class CartComponent implements OnInit {
   // for home page
   public homePagedata: any = [];
 
-  constructor() { 
+  constructor(private _title: Title ) { 
+    this._title.setTitle('Cart Page');
     let cartData = localStorage.getItem('cartItem');
     
     if(typeof cartData !== 'undefined' && cartData != null) {

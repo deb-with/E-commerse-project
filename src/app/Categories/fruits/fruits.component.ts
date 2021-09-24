@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FruitsPagedata as fp } from 'src/app/database';
 import { CartService } from 'src/app/cart.service';
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-fruits',
   templateUrl: './fruits.component.html',
@@ -8,7 +9,8 @@ import { CartService } from 'src/app/cart.service';
 })
 export class FruitsComponent implements OnInit {
 public fruitsPagedata:any={};
-  constructor(private _cartservice:CartService) { 
+  constructor(private _cartservice:CartService,private _title: Title ) { 
+    this._title.setTitle('Fruits Page');
     this.fruitsPagedata=fp;
   }
   addtocart(prodId : string){

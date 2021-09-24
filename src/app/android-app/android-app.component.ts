@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-android-app',
   templateUrl: './android-app.component.html',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AndroidAppComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _title: Title ) { 
+    this._title.setTitle('Android Page');
+  }
 
   ngOnInit(): void {
   }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import{ FormGroup, FormBuilder, Validators } from '@angular/forms'
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,9 @@ export class LoginComponent implements OnInit {
     'userEmailId':['',[Validators.required,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
     'userPass':['',[Validators.required,Validators.minLength(6),Validators.maxLength(10)]]
   });
-  constructor(private _formBuilder: FormBuilder) {}
+  constructor(private _formBuilder: FormBuilder,private _title: Title) {
+    this._title.setTitle('Login Page');
+  }
    ngOnInit(){
     
   }
