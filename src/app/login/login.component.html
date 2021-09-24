@@ -2,7 +2,7 @@
     <div class="container mt-5">
         <div class="row contain-center">
             <div class="col-12 col-sm-6 col-md-5">
-                <form class="form-container" [formGroup]="reactiveForm">
+                <form class="form-container" [formGroup]="reactiveForm" (ngSubmit)="isFormSubmitted = true">
                     <div class="col-mb-3">
                         <h1 class="login-heading">Login</h1>
                     </div>
@@ -14,7 +14,7 @@
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             formControlName="userEmailId" required>
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        <div *ngIf="reactiveForm.controls['userEmailId'].invalid && (reactiveForm.controls['userEmailId'].dirty || reactiveForm.controls['userEmailId'].touched)" class="alert">
+                        <div *ngIf="reactiveForm.controls['userEmailId'].invalid && (reactiveForm.controls['userEmailId'].dirty || reactiveForm.controls['userEmailId'].touched || isFormSubmitted)" class="alert">
                             <p class="text-danger">*Please enter valid email id.</p> 
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                         </label>
                         <input type="password" class="form-control" id="exampleInputPassword1"
                             formControlName="userPass" required>
-                            <div *ngIf="reactiveForm.controls['userPass'].invalid && (reactiveForm.controls['userPass'].dirty || reactiveForm.controls['userPass'].touched)" class="alert">
+                            <div *ngIf="reactiveForm.controls['userPass'].invalid && (reactiveForm.controls['userPass'].dirty || reactiveForm.controls['userPass'].touched || isFormSubmitted)" class="alert">
                                 <p class="text-danger">*Please enter correct password.</p> 
                             </div>
                     </div>

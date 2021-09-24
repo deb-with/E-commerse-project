@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MangoPagedata as mp } from 'src/app/database';
+import { CartService } from 'src/app/cart.service';
 @Component({
   selector: 'app-mango',
   templateUrl: './mango.component.html',
@@ -7,10 +8,13 @@ import { MangoPagedata as mp } from 'src/app/database';
 })
 export class MangoComponent implements OnInit {
   public mangoPagedata:any={};
-  constructor() {
+  constructor(private _cartservice:CartService) {
     this.mangoPagedata=mp;
    }
   ngOnInit(): void {
+  }
+  addtocart(prodId : string){
+    this._cartservice.setCart(prodId);
   }
 
 }

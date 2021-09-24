@@ -43,13 +43,7 @@ const routes: Routes = [
       { path: 'fruits', component: FruitsComponent }
     ]
   },
-  { path: 'index/:prodId', component: ProductDetailsComponent },
-  { path: 'Categories/vegetables/:prodId', component: ProductDetailsComponent },
-  { path: 'Categories/grocery/:prodId', component: ProductDetailsComponent },
-  { path: 'Categories/fruits/:prodId', component: ProductDetailsComponent },
-  { path: 'Categories/vegetables/potato/:prodId', component: ProductDetailsComponent },
-  { path: 'cart',component:CartComponent},
-  { path: 'buy-now',component:BuyNowComponent},
+ 
   //  vegetables accordian path declear
   {
     path: 'Categories',
@@ -96,6 +90,23 @@ const routes: Routes = [
     ]
   },
 
+  { path: 'index/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/vegetables/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/grocery/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/fruits/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/vegetables/onion/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/vegetables/potato/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/vegetables/chili/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/grocery/rice/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/grocery/sugar/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/grocery/oil/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/fruits/apple/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/fruits/bananas/:prodId', component: ProductDetailsComponent },
+  { path: 'Categories/fruits/mango/:prodId', component: ProductDetailsComponent },
+
+
+  { path: 'cart',component:CartComponent},
+  { path: 'buy-now',component:BuyNowComponent},
   //page not found path
   { path: '**', component: PageNotFoundComponent }
 ];

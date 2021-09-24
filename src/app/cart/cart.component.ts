@@ -3,6 +3,8 @@ import { HomePagedata } from '../database';
 import { VegetablesPagedata } from '../database';
 import { GroceryPagedata } from '../database';
 import { FruitsPagedata } from '../database';
+import { OnionPagedata,ChiliPagedata,PotatoPagedata,OilPagedata,RicePagedata,SugarPagedata,
+  ApplePagedata,BananasPagedata,MangoPagedata } from '../database';
 // interface Product{
 //   pId:string;
 //   pName:string;
@@ -56,8 +58,8 @@ export class CartComponent implements OnInit {
     return total;
   }
   */
- 
-  singleDelete(data:any){
+  
+  singleProductDelete(data:any){
     console.log(data.id);
     if(localStorage.getItem('cartItem')){
       // this.homePagedata = JSON.parse(localStorage.getItem('cartItem') as any);
@@ -69,7 +71,6 @@ export class CartComponent implements OnInit {
       }
     }
   }
-  
 
   // for home page
   public homePagedata: any = [];
@@ -141,6 +142,114 @@ export class CartComponent implements OnInit {
       let cartDataObj = JSON.parse(cartData);
       if(cartDataObj != null) {
         for(let item of FruitsPagedata.fruits) {
+          for(let cartItem of cartDataObj) {
+            if(item.id == cartItem) {
+              this.homePagedata.push(item);
+            }
+          }
+        }
+      }
+    }
+    if(typeof cartData !== 'undefined' && cartData != null) {
+      let cartDataObj = JSON.parse(cartData);
+      if(cartDataObj != null) {
+        for(let item of OnionPagedata.onion) {
+          for(let cartItem of cartDataObj) {
+            if(item.id == cartItem) {
+              this.homePagedata.push(item);
+            }
+          }
+        }
+      }
+    }
+    if(typeof cartData !== 'undefined' && cartData != null) {
+      let cartDataObj = JSON.parse(cartData);
+      if(cartDataObj != null) {
+        for(let item of ChiliPagedata.chili) {
+          for(let cartItem of cartDataObj) {
+            if(item.id == cartItem) {
+              this.homePagedata.push(item);
+            }
+          }
+        }
+      }
+    }
+    if(typeof cartData !== 'undefined' && cartData != null) {
+      let cartDataObj = JSON.parse(cartData);
+      if(cartDataObj != null) {
+        for(let item of PotatoPagedata.potato) {
+          for(let cartItem of cartDataObj) {
+            if(item.id == cartItem) {
+              this.homePagedata.push(item);
+            }
+          }
+        }
+      }
+    }
+    if(typeof cartData !== 'undefined' && cartData != null) {
+      let cartDataObj = JSON.parse(cartData);
+      if(cartDataObj != null) {
+        for(let item of OilPagedata.oil) {
+          for(let cartItem of cartDataObj) {
+            if(item.id == cartItem) {
+              this.homePagedata.push(item);
+            }
+          }
+        }
+      }
+    }
+    if(typeof cartData !== 'undefined' && cartData != null) {
+      let cartDataObj = JSON.parse(cartData);
+      if(cartDataObj != null) {
+        for(let item of RicePagedata.rice) {
+          for(let cartItem of cartDataObj) {
+            if(item.id == cartItem) {
+              this.homePagedata.push(item);
+            }
+          }
+        }
+      }
+    }
+    if(typeof cartData !== 'undefined' && cartData != null) {
+      let cartDataObj = JSON.parse(cartData);
+      if(cartDataObj != null) {
+        for(let item of SugarPagedata.sugar) {
+          for(let cartItem of cartDataObj) {
+            if(item.id == cartItem) {
+              this.homePagedata.push(item);
+            }
+          }
+        }
+      }
+    }
+    if(typeof cartData !== 'undefined' && cartData != null) {
+      let cartDataObj = JSON.parse(cartData);
+      if(cartDataObj != null) {
+        for(let item of ApplePagedata.apple) {
+          for(let cartItem of cartDataObj) {
+            if(item.id == cartItem) {
+              this.homePagedata.push(item);
+            }
+          }
+        }
+      }
+    }
+    if(typeof cartData !== 'undefined' && cartData != null) {
+      let cartDataObj = JSON.parse(cartData);
+      if(cartDataObj != null) {
+        for(let item of BananasPagedata.bananas) {
+          for(let cartItem of cartDataObj) {
+            if(item.id == cartItem) {
+              this.homePagedata.push(item);
+            }
+          }
+        }
+      }
+    }
+    if(typeof cartData !== 'undefined' && cartData != null) {
+      let cartDataObj = JSON.parse(cartData);
+      if(cartDataObj != null) {
+        for(let item of MangoPagedata.mango) {
           for(let cartItem of cartDataObj) {
             if(item.id == cartItem) {
               this.homePagedata.push(item);

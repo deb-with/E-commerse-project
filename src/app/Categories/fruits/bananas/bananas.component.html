@@ -98,19 +98,19 @@
                 <!-- .........................................top offer ................................ -->
                 <div class="product-banner">
                     <div class="col-md-12">
-                        <h3 class="category-title bg-warning mt-3 ">Bananas</h3>
+                        <h3 class="category-title bg-warning mt-3 ">Banana</h3>
                     </div>
                     <!-- hr -->
                     <!-- <hr class="line"> -->
                     <div class="row">
                         <div class="col-md-3" *ngFor="let data of bananasPagedata.bananas">
                             <div class="product-top">
-                                <img [src]="data.pImage" alt="">
+                                <img  [routerLink]="'/Categories/fruits/bananas/'+ data.id" [src]="data.pImage" alt="">
                                 <div class="p-icon-left">
                                     <button type="button" class="btn btn-secondary" title="Quick Shop">
                                         <i class="fa fa-heart-o"></i>
                                     </button>
-                                    <button type="button" class="btn btn-secondary fa-cart" title="Quick Shop">
+                                    <button type="button" class="btn btn-secondary fa-cart" title="Quick Shop" (click)="addtocart(data.id)">
                                         <i class="fa fa-shopping-cart"></i>
                                     </button>
                                 </div>
@@ -135,4 +135,4 @@
     </div>
 </section>
 <!-- hr -->
-<hr class="line">bananas
+<hr class="line">

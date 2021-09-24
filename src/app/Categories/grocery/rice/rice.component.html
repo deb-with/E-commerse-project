@@ -95,6 +95,8 @@
             </div>
             <!--...................... delivery banner .........-->
             <div class="col-md-9">
+                <!-- hr -->
+                <!-- <hr class="line"> -->
                 <!-- .........................................top offer ................................ -->
                 <div class="product-banner">
                     <div class="col-md-12">
@@ -102,15 +104,16 @@
                     </div>
                     <!-- hr -->
                     <!-- <hr class="line"> -->
+                    
                     <div class="row">
                         <div class="col-md-3" *ngFor="let data of ricePagedata.rice">
                             <div class="product-top">
-                                <img [src]="data.pImage" alt="">
+                                <img  [routerLink]="'/Categories/grocery/rice/'+ data.id" [src]="data.pImage" alt="">
                                 <div class="p-icon-left">
                                     <button type="button" class="btn btn-secondary" title="Quick Shop">
                                         <i class="fa fa-heart-o"></i>
                                     </button>
-                                    <button type="button" class="btn btn-secondary fa-cart" title="Quick Shop">
+                                    <button type="button" class="btn btn-secondary fa-cart" title="Quick Shop" (click)="addtocart(data.id)">
                                         <i class="fa fa-shopping-cart"></i>
                                     </button>
                                 </div>

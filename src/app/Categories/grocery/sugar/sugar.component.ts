@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SugarPagedata as sp } from 'src/app/database';
+import { CartService } from 'src/app/cart.service';
 @Component({
   selector: 'app-sugar',
   templateUrl: './sugar.component.html',
@@ -7,12 +8,14 @@ import { SugarPagedata as sp } from 'src/app/database';
 })
 export class SugarComponent implements OnInit {
   public sugarPagedata:any={};
-  constructor() {
+  constructor(private _cartservice:CartService) {
     this.sugarPagedata=sp;
    }
   
 
   ngOnInit(): void {
   }
-
+  addtocart(prodId : string){
+    this._cartservice.setCart(prodId);
+  }
 }

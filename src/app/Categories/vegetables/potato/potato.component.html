@@ -108,12 +108,12 @@
                     <div class="row">
                         <div class="col-md-3" *ngFor="let data of potatoPagedata.potato">
                             <div class="product-top">
-                                <img  routerLink="'Categories/vegetables/potato/'+ data.id" [src]="data.pImage" alt="">
+                                <img  [routerLink]="'/Categories/vegetables/potato/'+ data.id" [src]="data.pImage" alt="">
                                 <div class="p-icon-left">
                                     <button type="button" class="btn btn-secondary" title="Quick Shop">
                                         <i class="fa fa-heart-o"></i>
                                     </button>
-                                    <button type="button" class="btn btn-secondary fa-cart" title="Quick Shop">
+                                    <button type="button" class="btn btn-secondary fa-cart" title="Quick Shop" (click)="addtocart(data.id)">
                                         <i class="fa fa-shopping-cart"></i>
                                     </button>
                                 </div>

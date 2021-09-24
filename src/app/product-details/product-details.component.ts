@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { HomePagedata,FruitsPagedata,GroceryPagedata, VegetablesPagedata } from '../database';
+import { HomePagedata,FruitsPagedata,GroceryPagedata, 
+  VegetablesPagedata,OnionPagedata,ChiliPagedata,
+  PotatoPagedata,OilPagedata,RicePagedata,SugarPagedata,
+  ApplePagedata,BananasPagedata,MangoPagedata } from '../database';
+
 /*interface Product{
   pId:string;
   pName:string;
@@ -95,6 +99,87 @@ export class ProductDetailsComponent implements OnInit {
       }
       if(flag==0){
         for(let data of FruitsPagedata.fruits){
+          if(data.id == param.prodId) {
+            this.pagedata = data;
+            flag = 1;
+            break;
+          }
+        }
+      }
+      if(flag==0){
+        for(let data of OnionPagedata.onion){
+          if(data.id == param.prodId) {
+            this.pagedata = data;
+            flag = 1;
+            break;
+          }
+        }
+      }
+      if(flag==0){
+        for(let data of ChiliPagedata.chili){
+          if(data.id == param.prodId) {
+            this.pagedata = data;
+            flag = 1;
+            break;
+          }
+        }
+      }
+      if(flag==0){
+        for(let data of PotatoPagedata.potato){
+          if(data.id == param.prodId) {
+            this.pagedata = data;
+            flag = 1;
+            break;
+          }
+        }
+      }
+      if(flag==0){
+        for(let data of OilPagedata.oil){
+          if(data.id == param.prodId) {
+            this.pagedata = data;
+            flag = 1;
+            break;
+          }
+        }
+      }
+      if(flag==0){
+        for(let data of RicePagedata.rice){
+          if(data.id == param.prodId) {
+            this.pagedata = data;
+            flag = 1;
+            break;
+          }
+        }
+      }
+      if(flag==0){
+        for(let data of SugarPagedata.sugar){
+          if(data.id == param.prodId) {
+            this.pagedata = data;
+            flag = 1;
+            break;
+          }
+        }
+      }
+      if(flag==0){
+        for(let data of ApplePagedata.apple){
+          if(data.id == param.prodId) {
+            this.pagedata = data;
+            flag = 1;
+            break;
+          }
+        }
+      }
+      if(flag==0){
+        for(let data of BananasPagedata.bananas){
+          if(data.id == param.prodId) {
+            this.pagedata = data;
+            flag = 1;
+            break;
+          }
+        }
+      }
+      if(flag==0){
+        for(let data of MangoPagedata.mango){
           if(data.id == param.prodId) {
             this.pagedata = data;
             flag = 1;

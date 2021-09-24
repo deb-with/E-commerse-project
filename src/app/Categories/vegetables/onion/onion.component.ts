@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/cart.service';
 import { OnionPagedata as op } from 'src/app/database';
 
 @Component({
@@ -8,10 +9,13 @@ import { OnionPagedata as op } from 'src/app/database';
 })
 export class OnionComponent implements OnInit {
   public onionPagedata:any={};
-  constructor() {
+  constructor(private _cartservice:CartService) {
     this.onionPagedata=op;
    }
   ngOnInit(): void {
   }
+  addtocart(prodId : string){
 
+    this._cartservice.setCart(prodId);
+  }
 }

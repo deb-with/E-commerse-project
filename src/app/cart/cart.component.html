@@ -1,85 +1,53 @@
-<h1 *ngIf="homePagedata.length == 0">No item in cart</h1>
+<!-- <h1 *ngIf="homePagedata.length == 0"></h1> -->
+<ng-container *ngIf="homePagedata.length ==0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        <div class="center">
+            <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="">
+            <h4>Your cart is empty!</h4>
+            <h6>Add item to it now</h6>
+            <button routerLink="/index" class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>
 <div class="container cart-page">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12 btn-center">
             <ng-container *ngIf="homePagedata.length > 0">
                 <table class="table table-hover text-center table-striped">
                     <thead class="bg-secondary text-white">
                         <tr>
-                            <th>Id</th>
+                            <!-- <th>Id</th> -->
+                            <th>Sr. No</th>
                             <th>Image</th>
                             <th>Name</th>
                             <th>Price</th>
                             <th>Weight</th>
-                            <!-- <th>Total</th> -->
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody >
-                        <tr *ngFor="let data of homePagedata">
-                            <td>{{data.id}}</td>
-                            <td><img src="{{data.pImage}}" alt="" class="src" width="30" height="30"></td>
+                        <tr *ngFor="let data of homePagedata; let i=index">
+                            <!-- <td>{{data.id}}</td> -->
+                            <td>{{i+1}}</td>
+                            <td><img src="{{data.pImage}}" alt="" class="src" width="150" height="100"></td>
                             <td>{{data.pName}}</td>
-                            <td> {{data.pPrice}} </td>
+                            <td>{{data.pPrice}} </td>
                             <td>{{data.pWeight}}</td>
-                            <td><i (click)="singleDelete(data.id)"class="fa fa-remove"></i></td>
+                            <td><button (click)="singleProductDelete(data.id)"class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
                         </tr>
                         
                     </tbody>
                 </table>
-                <!-- <div *ngFor="let data of homePagedata">
-            id: {{data.id}}
-            <img src="{{data.pImage}}" alt="" class="src">
-    </div> -->
+               <button routerLink="/index" class="btn btn-primary">Continue Shop</button>
+               
             </ng-container>
         </div>
     </div>
 </div>
-<!-- <section class="mt-3">
-    <ng-container *ngIf="homePagedata.length > 0">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <table class="table table-hover text-center table-striped">
-                    <thead class=" bg-secondary text-white">
-                        <tr>
-                            <th>pId</th>
-                            <th>pName</th>
-                            <th>pImage</th>
-                            <th>pPrice</th>
-                            <th>pQty</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let data of homePagedata">
-                            <td>{{data.id}}</td>
-                            <td>{{data.pName}}</td>
-                            <td>
-                                <img [src]="data.pImage" alt="" width="50" height="50">
-                            </td>
-                            <td>{{data.pPrice}}</td>
 
-                            <td>
-                                <i (click)="dcrpQty(product.pId)"class="fa fa-minus-square"></i>
-                                {{data.pQty}}
-                                <i (click)="incrpQty(product.pId)" class="fa fa-plus-square"></i>
-                            </td>
-                            <td>{{data.pQty * data.pPrice}}</td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"></td>
-                            <td>Grand Total</td>
-                            <td>{{calcGrandTotal()}}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</ng-container>
-
-</section> -->
 <!-- <section class="mt-3">
     <div class="container">
         <div class="row">
