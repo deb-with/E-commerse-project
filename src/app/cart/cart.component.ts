@@ -6,6 +6,7 @@ import { FruitsPagedata } from '../database';
 import { OnionPagedata,ChiliPagedata,PotatoPagedata,OilPagedata,RicePagedata,SugarPagedata,
   ApplePagedata,BananasPagedata,MangoPagedata } from '../database';
 import { Title } from '@angular/platform-browser';
+// import { VegetablesComponent } from '../Categories/vegetables/vegetables.component';
 // interface Product{
 //   pId:string;
 //   pName:string;
@@ -20,6 +21,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
+  public homePagedata: any = [];
  /* public products:Product[]=[
     {
       pId:`a101`,
@@ -72,10 +74,41 @@ export class CartComponent implements OnInit {
       }
     }
   }
-
+  public incrpQty(id:any, pQty:any){
+    for(let i=0; i<this.homePagedata.length;i++){
+      if(this.homePagedata[i].id===id){
+        if(pQty !=5){
+          this.homePagedata[i].pQty = parseInt(pQty) + 1 ;
+        }
+      }
+    }
+    localStorage.setItem('cartItem',JSON.stringify(this.homePagedata));
+    this.calcTotal();
+  }
+  public dcrpQty(id:any, pQty:any){
+    for(let i=0; i<this.homePagedata.length;i++){
+      if(this.homePagedata[i].id===id){
+        if(pQty !=1){
+          this.homePagedata[i].pQty = parseInt(pQty) - 1 ;
+        }
+      }
+    }
+    localStorage.setItem('cartItem',JSON.stringify(this.homePagedata));
+    this.calcTotal();
+  }
+  total:number=0;
+  calcTotal(){
+    if(localStorage.getItem('cartItem')){
+      // this.homePagedata=JSON.parse(localStorage.getItem('cartItem') as string);
+      this.total = this.homePagedata.reduce(function(acc:any,val:any){
+        return acc + (val.pPrice * val.pQty);
+      },0 );
+    }
+  }
+  
   // for home page
-  public homePagedata: any = [];
-
+  
+ 
   constructor(private _title: Title ) { 
     this._title.setTitle('Cart Page');
     let cartData = localStorage.getItem('cartItem');
@@ -265,9 +298,8 @@ export class CartComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {
-    
-    
+  ngOnInit(): void { 
+    // this.homePagedata();
+    this.calcTotal();
   }
-  
 }

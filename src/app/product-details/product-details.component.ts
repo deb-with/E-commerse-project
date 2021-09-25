@@ -49,6 +49,8 @@ export class ProductDetailsComponent implements OnInit {
     }
     return total;
   }*/
+  
+
   public pagedata: any={};
 
   constructor(private _activatedRoute: ActivatedRoute, private _router: Router,private _title: Title ) {

@@ -46,7 +46,7 @@
                                         </a>
                                     </div>
                                     <div class="col-3 d-flex price_money">
-                                        <h3><span id="itemval">0.00</span></h3>
+                                        <h3><span id="itemval" [innerHtml]="pagedata.pPrice"></span></h3>
                                     </div>
                                 </div>
                                 <a routerLink=".."><button class="back-to-product mt-4 mb-4">
@@ -62,16 +62,16 @@
                         <h2 class="product_name mb-5">The Total Amount Of</h2>
                         <div class="price_individual d-flex justify-content-between">
                             <p>Product Amount</p>
-                            <p><i class="fa fa-inr"></i><span id="product_total_amt">0.00</span></p>
+                            <p><i class="fa fa-inr"></i><span id="product_total_amt" [innerHtml]="pagedata.pPrice"></span></p>
                         </div>
                         <div class="price_individual d-flex justify-content-between font-weight-bold">
                             <p>Shipping Charge</p>
-                            <p><i class="fa fa-inr"></i><span id="Shipping_charge">25.0</span></p>
+                            <p><i class="fa fa-inr"></i><span id="Shipping_charge" >25.0</span></p>
                         </div>
                         <hr />
                         <div class="total-amt d-flex justify-content-between">
                             <p>The total amount of (including VAT)</p>
-                            <p><i class="fa fa-inr"></i><span id="total_cart_amt">0.00</span></p>
+                            <p><i class="fa fa-inr"></i><span id="total_cart_amt" >{{0.00}}</span></p>
                         </div>
                         <!-- <a routerLink="#">
                             <button class="btn btn-primary ">Checkout Address</button>
